@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/servidor/webService?wsdl" uri="wsdl/localhost_8080/servidor/webService.wsdl"/>
+    <system systemId="http://localhost:8080/servidor/webService?xsd=1" uri="wsdl/localhost_8080/servidor/webService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/servidorMaven/servicoString?wsdl" uri="wsdl/localhost_8080/servidorMaven/servicoString.wsdl"/>
+    <system systemId="http://localhost:8080/servidorMaven/servicoString?xsd=1" uri="wsdl/localhost_8080/servidorMaven/servicoString.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/servidorMaven/Servico?wsdl" uri="wsdl/localhost_8080/servidorMaven/Servico.wsdl"/>
+    <system systemId="http://localhost:8080/servidorMaven/Servico?xsd=1" uri="wsdl/localhost_8080/servidorMaven/Servico.xsd_1.xsd"/>
+</catalog>
