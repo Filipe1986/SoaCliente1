@@ -16,7 +16,8 @@ public class Cliente {
 
         Publicacoes pub = consultaPublicacaoPorNome("Artigo 1");
         for (int i = 0; i < pub.getPublicacoes().size(); i++) {
-            System.out.println(pub.getPublicacoes().get(i).getTitulo());
+            System.out.println(pub.getPublicacoes().get(i).getTitulo() 
+                    +"Ano de publicação: "+ pub.getPublicacoes().get(i).getAnoPublicacao());
         }
 
     }
