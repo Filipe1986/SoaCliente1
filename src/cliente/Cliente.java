@@ -13,11 +13,15 @@ public class Cliente {
     public static void main(String[] args) {
         //unirio.Publicacoes pub = consultaPorNome("artigo");
         System.out.println("Multiplicacao: " + multiplicacao(3, 12));
+        
+        System.out.println("Resultado add " + addPublicacao(9, "Artigo 9", 3, 30, 1990));
+        
+        
 
-        Publicacoes pub = consultaPublicacaoPorNome("Artigo 1");
+        Publicacoes pub = consultaPublicacaoPorNome("Artigo 9");
         for (int i = 0; i < pub.getPublicacoes().size(); i++) {
             System.out.println(pub.getPublicacoes().get(i).getTitulo() 
-                    +"Ano de publicação: "+ pub.getPublicacoes().get(i).getAnoPublicacao());
+                    +" Ano de publicação: "+ pub.getPublicacoes().get(i).getAnoPublicacao());
         }
 
     }
@@ -40,6 +44,12 @@ public class Cliente {
         unirio.Servico_Service service = new unirio.Servico_Service();
         unirio.Servico port = service.getServicoPort();
         return port.multiplicacao(inteiro1, inteiro2);
+    }
+
+    private static Boolean addPublicacao(int Id, String titulo, int paginaInicial, int paginaFinal,Integer  anoPublicacao) {
+       unirio.Servico_Service service = new unirio.Servico_Service();
+        unirio.Servico port = service.getServicoPort();
+        return port.addPublicacao( Id,  titulo, paginaInicial, paginaFinal, anoPublicacao);
     }
 
 }
