@@ -4,6 +4,6 @@
     <system systemId="http://localhost:8080/servidor/webService?xsd=1" uri="xml-resources/web-service-references/webService/wsdl/localhost_8080/servidor/webService.xsd_1.xsd"/>
     <system systemId="http://localhost:8080/servidorMaven/servicoString?wsdl" uri="xml-resources/web-service-references/servicoString/wsdl/localhost_8080/servidorMaven/servicoString.wsdl"/>
     <system systemId="http://localhost:8080/servidorMaven/servicoString?xsd=1" uri="xml-resources/web-service-references/servicoString/wsdl/localhost_8080/servidorMaven/servicoString.xsd_1.xsd"/>
-    <system systemId="http://localhost:8080/servidorMaven/Servico?wsdl" uri="xml-resources/web-service-references/Servico/wsdl/localhost_8080/servidorMaven/Servico.wsdl"/>
-    <system systemId="http://localhost:8080/servidorMaven/Servico?xsd=1" uri="xml-resources/web-service-references/Servico/wsdl/localhost_8080/servidorMaven/Servico.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/servidorMaven/Servico?wsdl" uri="xml-resources/web-service-references/Servico_6/wsdl/localhost_8080/servidorMaven/Servico.wsdl"/>
+    <system systemId="http://localhost:8080/servidorMaven/Servico?xsd=1" uri="xml-resources/web-service-references/Servico_6/wsdl/localhost_8080/servidorMaven/Servico.xsd_1.xsd"/>
 </catalog>

@@ -10,14 +10,11 @@ import unirio.Publicacoes;
  */
 public class Cliente {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         //unirio.Publicacoes pub = consultaPorNome("artigo");
         System.out.println("Multiplicacao: " + multiplicacao(3, 12));
 
-        Publicacoes pub = consultaPorNome("1");
+        Publicacoes pub = consultaPublicacaoPorNome("Artigo 1");
         for (int i = 0; i < pub.getPublicacoes().size(); i++) {
             System.out.println(pub.getPublicacoes().get(i).getTitulo());
         }
@@ -29,6 +26,13 @@ public class Cliente {
         
         unirio.Servico port = servico.getServicoPort();
         return port.consultaPorNome(nomePublicacao);
+    }
+    
+     private static Publicacoes consultaPublicacaoPorNome(String nomePublicacao) {
+       unirio.Servico_Service servico = new unirio.Servico_Service();
+        
+        unirio.Servico port = servico.getServicoPort();
+        return port.consultaPublicacaoPorNome(nomePublicacao);
     }
 
     private static int multiplicacao(int inteiro1, int inteiro2) {
