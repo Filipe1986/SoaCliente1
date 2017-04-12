@@ -4,23 +4,17 @@
 <xsd:import namespace="http://unirio/" schemaLocation="http://localhost:8080/servidorMaven/Servico?xsd=1"/>
 </xsd:schema>
 </types>
-<message name="multiplicacao">
-<part name="parameters" element="tns:multiplicacao"/>
+<message name="consultaPublicacaoPorNome">
+<part name="parameters" element="tns:consultaPublicacaoPorNome"/>
 </message>
-<message name="multiplicacaoResponse">
-<part name="parameters" element="tns:multiplicacaoResponse"/>
+<message name="consultaPublicacaoPorNomeResponse">
+<part name="parameters" element="tns:consultaPublicacaoPorNomeResponse"/>
 </message>
 <message name="addPublicacao">
 <part name="parameters" element="tns:addPublicacao"/>
 </message>
 <message name="addPublicacaoResponse">
 <part name="parameters" element="tns:addPublicacaoResponse"/>
-</message>
-<message name="removePublicacao">
-<part name="parameters" element="tns:removePublicacao"/>
-</message>
-<message name="removePublicacaoResponse">
-<part name="parameters" element="tns:removePublicacaoResponse"/>
 </message>
 <message name="consultaPorNome">
 <part name="parameters" element="tns:consultaPorNome"/>
@@ -34,24 +28,20 @@
 <message name="helloResponse">
 <part name="parameters" element="tns:helloResponse"/>
 </message>
-<message name="consultaPublicacaoPorNome">
-<part name="parameters" element="tns:consultaPublicacaoPorNome"/>
+<message name="multiplicacao">
+<part name="parameters" element="tns:multiplicacao"/>
 </message>
-<message name="consultaPublicacaoPorNomeResponse">
-<part name="parameters" element="tns:consultaPublicacaoPorNomeResponse"/>
+<message name="multiplicacaoResponse">
+<part name="parameters" element="tns:multiplicacaoResponse"/>
 </message>
 <portType name="Servico">
-<operation name="multiplicacao">
-<input wsam:Action="http://unirio/Servico/multiplicacaoRequest" message="tns:multiplicacao"/>
-<output wsam:Action="http://unirio/Servico/multiplicacaoResponse" message="tns:multiplicacaoResponse"/>
+<operation name="consultaPublicacaoPorNome">
+<input wsam:Action="http://unirio/Servico/consultaPublicacaoPorNomeRequest" message="tns:consultaPublicacaoPorNome"/>
+<output wsam:Action="http://unirio/Servico/consultaPublicacaoPorNomeResponse" message="tns:consultaPublicacaoPorNomeResponse"/>
 </operation>
 <operation name="addPublicacao">
 <input wsam:Action="http://unirio/Servico/addPublicacaoRequest" message="tns:addPublicacao"/>
 <output wsam:Action="http://unirio/Servico/addPublicacaoResponse" message="tns:addPublicacaoResponse"/>
-</operation>
-<operation name="removePublicacao">
-<input wsam:Action="http://unirio/Servico/removePublicacaoRequest" message="tns:removePublicacao"/>
-<output wsam:Action="http://unirio/Servico/removePublicacaoResponse" message="tns:removePublicacaoResponse"/>
 </operation>
 <operation name="consultaPorNome">
 <input wsam:Action="http://unirio/Servico/consultaPorNomeRequest" message="tns:consultaPorNome"/>
@@ -61,14 +51,14 @@
 <input wsam:Action="http://unirio/Servico/helloRequest" message="tns:hello"/>
 <output wsam:Action="http://unirio/Servico/helloResponse" message="tns:helloResponse"/>
 </operation>
-<operation name="consultaPublicacaoPorNome">
-<input wsam:Action="http://unirio/Servico/consultaPublicacaoPorNomeRequest" message="tns:consultaPublicacaoPorNome"/>
-<output wsam:Action="http://unirio/Servico/consultaPublicacaoPorNomeResponse" message="tns:consultaPublicacaoPorNomeResponse"/>
+<operation name="multiplicacao">
+<input wsam:Action="http://unirio/Servico/multiplicacaoRequest" message="tns:multiplicacao"/>
+<output wsam:Action="http://unirio/Servico/multiplicacaoResponse" message="tns:multiplicacaoResponse"/>
 </operation>
 </portType>
 <binding name="ServicoPortBinding" type="tns:Servico">
 <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
-<operation name="multiplicacao">
+<operation name="consultaPublicacaoPorNome">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>
@@ -78,15 +68,6 @@
 </output>
 </operation>
 <operation name="addPublicacao">
-<soap:operation soapAction=""/>
-<input>
-<soap:body use="literal"/>
-</input>
-<output>
-<soap:body use="literal"/>
-</output>
-</operation>
-<operation name="removePublicacao">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>
@@ -113,7 +94,7 @@
 <soap:body use="literal"/>
 </output>
 </operation>
-<operation name="consultaPublicacaoPorNome">
+<operation name="multiplicacao">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>

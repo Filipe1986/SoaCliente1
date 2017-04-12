@@ -24,6 +24,18 @@
 
 <xs:element name="removePublicacaoResponse" type="tns:removePublicacaoResponse"/>
 
+<xs:complexType name="removePublicacao">
+<xs:sequence>
+<xs:element name="Id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removePublicacaoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
 <xs:complexType name="addPublicacao">
 <xs:sequence>
 <xs:element name="Id" type="xs:int"/>
@@ -35,18 +47,6 @@
 </xs:complexType>
 
 <xs:complexType name="addPublicacaoResponse">
-<xs:sequence>
-<xs:element name="return" type="xs:boolean" minOccurs="0"/>
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="removePublicacao">
-<xs:sequence>
-<xs:element name="Id" type="xs:int"/>
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="removePublicacaoResponse">
 <xs:sequence>
 <xs:element name="return" type="xs:boolean" minOccurs="0"/>
 </xs:sequence>

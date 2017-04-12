@@ -271,5 +271,158 @@
         <delete dir="${build.generated.dir}/jax-wsCache/Servico_14"/>
         <delete dir="${build.generated.sources.dir}/jax-ws/unirio"/>
     </target>
-    <target name="wsimport-client-generate" depends="wsimport-client-Servico, wsimport-client-Servico_1, wsimport-client-Servico_2, wsimport-client-Servico_3, wsimport-client-Servico_4, wsimport-client-Servico_5, wsimport-client-Servico_6, wsimport-client-Servico_7, wsimport-client-Servico_8, wsimport-client-Servico_9, wsimport-client-Servico_10, wsimport-client-Servico_11, wsimport-client-Servico_12, wsimport-client-Servico_13, wsimport-client-Servico_14"/>
+    <target name="wsimport-client-Servico_15" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Servico_15"/>
+        <property name="wsdl-Servico_15" location="xml-resources/web-service-references/Servico_15/wsdl/localhost_8080/servidorMaven/Servico.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Servico_15" destdir="${build.generated.dir}/jax-wsCache/Servico_15" wsdl="${wsdl-Servico_15}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/servidorMaven/Servico?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-Servico_15}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Servico_15"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Servico_15">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Servico_15" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/Servico_15"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/unirio"/>
+    </target>
+    <target name="wsimport-client-Servico_16" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Servico_16"/>
+        <property name="wsdl-Servico_16" location="xml-resources/web-service-references/Servico_16/wsdl/localhost_8080/servidorMaven/Servico.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Servico_16" destdir="${build.generated.dir}/jax-wsCache/Servico_16" wsdl="${wsdl-Servico_16}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/servidorMaven/Servico?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-Servico_16}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Servico_16"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Servico_16">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Servico_16" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/Servico_16"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/unirio"/>
+    </target>
+    <target name="wsimport-client-Servico_17" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Servico_17"/>
+        <property name="wsdl-Servico_17" location="xml-resources/web-service-references/Servico_17/wsdl/localhost_8080/servidorMaven/Servico.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Servico_17" destdir="${build.generated.dir}/jax-wsCache/Servico_17" wsdl="${wsdl-Servico_17}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/servidorMaven/Servico?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-Servico_17}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Servico_17"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Servico_17">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Servico_17" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/Servico_17"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/unirio"/>
+    </target>
+    <target name="wsimport-client-Servico_18" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Servico_18"/>
+        <property name="wsdl-Servico_18" location="xml-resources/web-service-references/Servico_18/wsdl/localhost_8080/servidorMaven/Servico.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Servico_18" destdir="${build.generated.dir}/jax-wsCache/Servico_18" wsdl="${wsdl-Servico_18}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/servidorMaven/Servico?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-Servico_18}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Servico_18"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Servico_18">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Servico_18" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/Servico_18"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/unirio"/>
+    </target>
+    <target name="wsimport-client-Servico_19" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Servico_19"/>
+        <property name="wsdl-Servico_19" location="xml-resources/web-service-references/Servico_19/wsdl/localhost_8080/servidorMaven/Servico.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Servico_19" destdir="${build.generated.dir}/jax-wsCache/Servico_19" wsdl="${wsdl-Servico_19}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/servidorMaven/Servico?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-Servico_19}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Servico_19"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Servico_19">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Servico_19" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/Servico_19"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/unirio"/>
+    </target>
+    <target name="wsimport-client-Servico_20" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Servico_20"/>
+        <property name="wsdl-Servico_20" location="xml-resources/web-service-references/Servico_20/wsdl/localhost_8080/servidorMaven/Servico.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Servico_20" destdir="${build.generated.dir}/jax-wsCache/Servico_20" wsdl="${wsdl-Servico_20}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/servidorMaven/Servico?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-Servico_20}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Servico_20"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Servico_20">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Servico_20" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/Servico_20"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/unirio"/>
+    </target>
+    <target name="wsimport-client-Servico_21" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Servico_21"/>
+        <property name="wsdl-Servico_21" location="xml-resources/web-service-references/Servico_21/wsdl/localhost_8080/servidorMaven/Servico.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Servico_21" destdir="${build.generated.dir}/jax-wsCache/Servico_21" wsdl="${wsdl-Servico_21}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/servidorMaven/Servico?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-Servico_21}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Servico_21"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Servico_21">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Servico_21" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/Servico_21"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/unirio"/>
+    </target>
+    <target name="wsimport-client-Servico_22" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Servico_22"/>
+        <property name="wsdl-Servico_22" location="xml-resources/web-service-references/Servico_22/wsdl/localhost_8080/servidorMaven/Servico.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Servico_22" destdir="${build.generated.dir}/jax-wsCache/Servico_22" wsdl="${wsdl-Servico_22}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/servidorMaven/Servico?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-Servico_22}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Servico_22"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Servico_22">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Servico_22" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/Servico_22"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/unirio"/>
+    </target>
+    <target name="wsimport-client-Servico_23" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Servico_23"/>
+        <property name="wsdl-Servico_23" location="xml-resources/web-service-references/Servico_23/wsdl/localhost_8080/servidorMaven/Servico.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Servico_23" destdir="${build.generated.dir}/jax-wsCache/Servico_23" wsdl="${wsdl-Servico_23}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/servidorMaven/Servico?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-Servico_23}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Servico_23"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Servico_23">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Servico_23" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/Servico_23"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/unirio"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-Servico, wsimport-client-Servico_1, wsimport-client-Servico_2, wsimport-client-Servico_3, wsimport-client-Servico_4, wsimport-client-Servico_5, wsimport-client-Servico_6, wsimport-client-Servico_7, wsimport-client-Servico_8, wsimport-client-Servico_9, wsimport-client-Servico_10, wsimport-client-Servico_11, wsimport-client-Servico_12, wsimport-client-Servico_13, wsimport-client-Servico_14, wsimport-client-Servico_15, wsimport-client-Servico_16, wsimport-client-Servico_17, wsimport-client-Servico_18, wsimport-client-Servico_19, wsimport-client-Servico_20, wsimport-client-Servico_21, wsimport-client-Servico_22, wsimport-client-Servico_23"/>
 </project>
